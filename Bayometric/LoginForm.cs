@@ -4,8 +4,10 @@ using System.Windows.Forms;
 
 namespace Bayometric
 {
+
     public partial class LoginForm : Form
     {
+
         public LoginForm(Nffv engine)
         {
             InitializeComponent();
@@ -17,7 +19,8 @@ namespace Bayometric
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Dispose();
-            RunApplication.Run(Engine);
+            RunApplication runApplication = new RunApplication();
+            runApplication.Run();
         }
 
         public string UserName
@@ -45,7 +48,6 @@ namespace Bayometric
                 return;
             }
 
-            MinimizeBox = true;
             VerificationForm verificationForm = new VerificationForm(UserName, "", "", "Verify", Engine);
 
             if (verificationForm.ShowDialog() == DialogResult.OK)

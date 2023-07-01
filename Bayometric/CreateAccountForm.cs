@@ -17,7 +17,8 @@ namespace Bayometric
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Dispose();
-            RunApplication.Run(Engine);
+            RunApplication runApplication = new RunApplication(Engine);
+            runApplication.Run();
         }
 
 

@@ -10,7 +10,6 @@ namespace Bayometric
         /// The main entry point for the application.
         /// </summary>
         /// 
-        private static Nffv Engine { get; } = null;
 
         [STAThread]
         static void Main()
@@ -19,16 +18,13 @@ namespace Bayometric
             Application.SetCompatibleTextRenderingDefault(false);
             try
             {
-                RunApplication.Run(Engine);
+                RunApplication runApplication = new RunApplication();
+                runApplication.Run();
 
             }
             catch (Exception ex)
             {
                 throw ex;
-            }
-            finally
-            {
-                Engine?.Dispose();
             }
         }
     }

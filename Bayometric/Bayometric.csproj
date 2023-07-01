@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -50,6 +50,9 @@
   <PropertyGroup>
     <ApplicationIcon>Neurotechnology.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Bayometric.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\CSharpSample\packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll</HintPath>
@@ -67,6 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusyForm.designer.cs">
+      <DependentUpon>BusyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseScannerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseScannerForm.Designer.cs">
+      <DependentUpon>ChooseScannerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateAccountForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +101,9 @@
       <DependentUpon>HeaderComponent.cs</DependentUpon>
     </Compile>
     <Compile Include="RunApplication.cs" />
+    <Compile Include="RunScanning.cs" />
+    <Compile Include="SettingsDatabase.cs" />
+    <Compile Include="UserDatabase.cs" />
     <Compile Include="VerificationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +130,13 @@
     <Compile Include="LandingForm.Designer.cs">
       <DependentUpon>LandingForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BusyForm.resx">
+      <DependentUpon>BusyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseScannerForm.resx">
+      <DependentUpon>ChooseScannerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateAccountForm.resx">
       <DependentUpon>CreateAccountForm.cs</DependentUpon>
     </EmbeddedResource>

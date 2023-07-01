@@ -16,3 +16,5 @@ C:\Users\Eban Godwin Ikoni\Desktop\FreeFingerprintVerification_3_0_SDK\Samples\F
 C:\Users\Eban Godwin Ikoni\Desktop\FreeFingerprintVerification_3_0_SDK\Samples\FreeFingerprintVerification\CS\Bayometric\obj\Debug\Bayometric.csproj.CopyComplete
 C:\Users\Eban Godwin Ikoni\Desktop\FreeFingerprintVerification_3_0_SDK\Samples\FreeFingerprintVerification\CS\Bayometric\obj\Debug\Bayometric.exe
 C:\Users\Eban Godwin Ikoni\Desktop\FreeFingerprintVerification_3_0_SDK\Samples\FreeFingerprintVerification\CS\Bayometric\obj\Debug\Bayometric.pdb
+C:\Users\Eban Godwin Ikoni\Desktop\FreeFingerprintVerification_3_0_SDK\Samples\FreeFingerprintVerification\CS\Bayometric\obj\Debug\Neurotec.Gui.BusyForm.resources
+C:\Users\Eban Godwin Ikoni\Desktop\FreeFingerprintVerification_3_0_SDK\Samples\FreeFingerprintVerification\CS\Bayometric\obj\Debug\Bayometric.ChooseScannerForm.resources

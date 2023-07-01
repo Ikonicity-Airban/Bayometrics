@@ -15,6 +15,7 @@ namespace Bayometric
         public LandingForm()
         {
             InitializeComponent();
+            LoginPanel.Controls.Remove(panelPB);
         }
 
         private void Tile_Click(object sender, EventArgs e)
